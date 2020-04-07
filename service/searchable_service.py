@@ -34,7 +34,7 @@ class Searchable():
     
     def do(self, name: str, hocr_list: list, images: list) -> str:
         """ Cria um pdf searchable combinando imagens com hocr """
-        pdf_path = self.searchable_path + name + "_searchable.pdf"
+        pdf_path = self.searchable_path + name
         pdf = Canvas(pdf_path)
         pdf.setCreator('TotOcr')
         pdf.setTitle(name)
